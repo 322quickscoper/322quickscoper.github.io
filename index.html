@@ -7,8 +7,10 @@
     <link href="https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
   </head><body>
   <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
     body{
-      background: url('https://s32.postimg.org/t0j2kpedx/2016_07_05_05_44.png');
+      background: url('https://s31.postimg.org/74evf9i2z/2016_07_05_07_55.png');
+      font-family: 'Roboto';
     }
     .navbar-default {
     background-color: rgba(255,255,255,0.3);
@@ -18,17 +20,44 @@
     color: #000000;
     background-color: white;
 }
+  .section.contacts h1{
+    font-size: 52px;
+    font-family: 'Roboto';
+  }
     form{
       text-align: center;
+    }
+    .form-control {
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding: 6px 12px;
+    font-size: 46px;
+    line-height: 1.42857143;
+    color: #337cbb;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-bottom: 5px solid #337cbb;
+    transition: border-width ease-in-out .15s, border-width ease-in-out .15s;
+    }
+    .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border-bottom-width: 3px;
+
     }
     input{
       margin-bottom: 10px;
     }
     input[type="submit"]{
-    background: #337cbb;
+   background: #337cbb;
     border: none;
     padding: 11px 25px;
+    width: 100%;
     color: white;
+    font-size: 45px;
+    text-transform: uppercase;
     }
     input[type="submit"]:hover{
       opacity: 0.9;
@@ -43,6 +72,14 @@
     .section.techs .col-md-4 .img-responsive{
       text-align: center;
       display: inline-block;
+    }
+    .section.projects{
+      background-blend-mode: exclusion;
+      text-align: center;
+
+    }
+    .section.projects h1{
+      margin-bottom: 25px;
     }
   </style>
     <div class="navbar navbar-default navbar-static-top">
@@ -61,6 +98,9 @@
               <a href="#">Home</a>
             </li>
             <li>
+              <a href="#projcts">Portfolio</a>
+            </li>
+            <li>
               <a href="#contactMe">Contact</a>
             </li>
           </ul>
@@ -73,24 +113,23 @@
           <div class="col-md-6">
             <h1>About Me</h1>
             <h3>Young Web-Developer/Designer from Ukraine</h3>
-            <p>Hi, my name is Yura, i`m from Lviv,Ukraine. My occupation is web-development as well as Web-design and Mobile Design. I have 2+ years of experience and i love to challenge myself with difficult projects and tasks. I believe that <strong>hard work == good result</strong>.</p>
+            <p style="font-size: 18px;">Hi, my name is Yura, i`m from Lviv,Ukraine. My occupation is web-development as well as Web-design and Mobile Design. I have 2+ years of experience and i love to challenge myself with difficult projects and tasks. I believe that <strong>hard work == good result</strong>.</p>
           </div>
           <div class="col-md-6">
-            <img src="https://pp.vk.me/c624526/v624526199/2a0d2/dRFAuwp73DY.jpg" class="img-responsive" style="width: 80%; height: auto;">
+            <img src="https://s32.postimg.org/4r9hvd75h/d_RFAuwp73_DY.jpg" class="img-responsive" style="width: 80%; height: auto;">
           </div>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
+   
+    <div class="section projects" id="projcts">
+     <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h1>My Projects</h1>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -143,17 +182,14 @@
         </div>
       </div>
     </div>
-    <div class="section" id="contactMe">
+    <div class="section contacts" id="contactMe">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center">Contact me</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-offset-3 col-md-6 ">
+          <h1 class="text-center">Contact me</h1>
             <form action="https://formspree.io/yurayurabarabura@gmail.com" method="POST">
               <input type="text" name="name" class="form-control" placeholder="Enter your Name">
+              <input type="textarea" name="your-text" class="form-control" placeholder="Enter Your Message">
               <input type="email" name="_replyto" class="form-control" placeholder="Enter Your Email">
               <input type="submit" value="Send">
             </form>
