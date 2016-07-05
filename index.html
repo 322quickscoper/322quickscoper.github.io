@@ -9,20 +9,33 @@
   <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
     body{
-      background: url('https://s31.postimg.org/74evf9i2z/2016_07_05_07_55.png');
+      background: url('http://66.media.tumblr.com/93c8842f4912d5917a8e13787d136aa6/tumblr_mw7nw6VC0m1strghto1_1280.jpg');
       font-family: 'Roboto';
-    }
+          }
     h1,h2,h3,h4,h5,h6{
       font-size: 52px;
     font-family: 'Roboto';
     color: #565656;
+    font-weight: 700;
     }
     h2,h3,h4,h5,h6{
       font-size: 32px;
     }
     .navbar-default {
     background-color: rgba(255,255,255,0.3);
-    
+    }
+    .navbar-right{
+      background: white;
+    }
+    .navbar-right li{
+      background: white;
+    }
+    .navbar-right li a {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .navbar-right li:hover{
+      background: #f4fcff;;
     }
     .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #000000;
@@ -70,6 +83,9 @@
     input[type="submit"]:hover{
       opacity: 0.9;
     }
+    .section{
+      background: rgba(255,255,255,0.6);
+    }
     .section.techs{
       background: white;
     }
@@ -89,6 +105,10 @@
     .section.projects h1{
       margin-bottom: 25px;
     }
+    .myphoto{
+      -webkit-clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 5% 50%);
+    clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 5% 50%);
+    }
   </style>
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
@@ -102,8 +122,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-              <a href="#">Home</a>
+            <li>
+              <a href="#about">Home</a>
             </li>
             <li>
               <a href="#projcts">Portfolio</a>
@@ -115,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section about" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -123,8 +143,8 @@
             <h3>Young Web-Developer/Designer from Ukraine</h3>
             <p style="font-size: 18px;">Hi, my name is Yura, i`m from Lviv,Ukraine. My occupation is web-development as well as Web-design and Mobile Design. I have 2+ years of experience and i love to challenge myself with difficult projects and tasks. I believe that <strong>hard work == good result</strong>.</p>
           </div>
-          <div class="col-md-6">
-            <img src="https://s32.postimg.org/4r9hvd75h/d_RFAuwp73_DY.jpg" class="img-responsive" style="width: 80%; height: auto;">
+          <div class="col-md-6 col-xs-12">
+            <img class="myphoto" src="https://s32.postimg.org/4r9hvd75h/d_RFAuwp73_DY.jpg" class="img-responsive" style="width: 90%; height: auto;">
           </div>
         </div>
       </div>
@@ -197,7 +217,6 @@
           <h1 class="text-center">Contact me</h1>
             <form action="https://formspree.io/yurayurabarabura@gmail.com" method="POST">
               <input type="text" name="name" class="form-control" placeholder="Enter your Name">
-              <input type="textarea" name="your-text" class="form-control" placeholder="Enter Your Message">
               <input type="email" name="_replyto" class="form-control" placeholder="Enter Your Email">
               <input type="submit" value="Send">
             </form>
